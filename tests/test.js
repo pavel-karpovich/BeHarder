@@ -6,8 +6,11 @@ var index = require('../index.js');
 describe('Tests index', function() {
   it('verifies successful response', function(done) {
     index.get({ /* event */ }, { /* context */ }, (err, result) => {
+      if (err) {
+        done(err);
+      }
       try {
-        test.number(result.statusCode).is(404);
+        test.number(result.statusCode).is(200);
         test.string(result.body).contains('Congratulations');
         test.value(result).hasHeader('content-type', 'text/html');
         done();
