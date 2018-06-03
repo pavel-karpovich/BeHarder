@@ -7,7 +7,7 @@ describe('Tests index', function() {
   it('verifies successful response', function(done) {
     index.get({ /* event */ }, { /* context */ }, (err, result) => {
       try {
-        test.number(result.statusCode).is(200);
+        test.number(result.statusCode).is(404);
         test.string(result.body).contains('Congratulations');
         test.value(result).hasHeader('content-type', 'text/html');
         done();
