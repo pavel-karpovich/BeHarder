@@ -1,5 +1,6 @@
 
 window.onload = (e) => {
+    /*
     const items = [
         document.getElementById('menu_item_1'),
         document.getElementById('menu_item_2'),
@@ -18,7 +19,7 @@ window.onload = (e) => {
                 e => e.target.parentElement.classList.remove('menu-focus')
                 );
             }
-        );
+    );*/
     document.getElementById('mobile_menu_btn')
         .addEventListener('click',
             e => {
