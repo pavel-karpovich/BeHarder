@@ -91,9 +91,10 @@
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\r\nwindow.onload = (e) => {\r\n\r\n    document.getElementById('mobile_menu_btn')\r\n        .addEventListener('click',\r\n            e => {\r\n                let cls = e.currentTarget.firstElementChild.classList;\r\n                cls.toggle('icon-menu');\r\n                cls.toggle('icon-close');\r\n                let menu = document.getElementById('mobile_menu');\r\n                menu.classList.toggle('mobile-menu-toggle');\r\n            }\r\n        );\r\n    \r\n    [].forEach.call(document.getElementsByClassName('cls-3-doc'),\r\n        elm => elm.addEventListener('click',\r\n            e => {\r\n                console.log('1');\r\n                let sqr = e.currentTarget;\r\n                let check = document.getElementById('check_mark_' + sqr.id.slice(-1));\r\n                check.classList.toggle('invisible');\r\n            }\r\n        )\r\n    );\r\n};\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("\r\n\r\nwindow.onload = () => {\r\n\r\n    document.getElementById('mobile_menu_btn')\r\n        .addEventListener('click',\r\n            e => {\r\n                let cls = e.currentTarget.firstElementChild.classList;\r\n                cls.toggle('icon-menu');\r\n                cls.toggle('icon-close');\r\n                let menu = document.getElementById('mobile_menu');\r\n                menu.classList.toggle('mobile-menu-toggle');\r\n            }\r\n        );\r\n    \r\n    [].forEach.call(document.getElementsByClassName('cls-5-doc'),\r\n        elm => elm.addEventListener('click',    \r\n            e => {\r\n                console.log('1');\r\n                let sqr = e.currentTarget;\r\n                let check = document.getElementById(\r\n                    'check_mark_' + sqr.id.slice(-1));\r\n                check.classList.toggle('invisible');\r\n            }\r\n        )\r\n    );\r\n};\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

@@ -1,5 +1,6 @@
+'use strict';
 
-window.onload = (e) => {
+window.onload = () => {
 
     document.getElementById('mobile_menu_btn')
         .addEventListener('click',
@@ -12,12 +13,13 @@ window.onload = (e) => {
             }
         );
     
-    [].forEach.call(document.getElementsByClassName('cls-3-doc'),
-        elm => elm.addEventListener('click',
+    [].forEach.call(document.getElementsByClassName('cls-5-doc'),
+        elm => elm.addEventListener('click',    
             e => {
                 console.log('1');
                 let sqr = e.currentTarget;
-                let check = document.getElementById('check_mark_' + sqr.id.slice(-1));
+                let check = document.getElementById(
+                    'check_mark_' + sqr.id.slice(-1));
                 check.classList.toggle('invisible');
             }
         )
