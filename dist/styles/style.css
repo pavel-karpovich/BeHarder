@@ -290,7 +290,7 @@ h2 {
 }
 
 .first-sec {
-    background-image: url('/images/sea.svg');
+    background-image: url('../images/sea.svg');
     background-position: center center; 
     background-size: cover;
     display: flex;

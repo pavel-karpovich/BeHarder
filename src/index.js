@@ -16,7 +16,6 @@ window.onload = () => {
   [].forEach.call(document.getElementsByClassName('cls-5-doc'),
     elm => elm.addEventListener('click',
       e => {
-        console.log('1');
         let sqr = e.currentTarget;
         let check = document.getElementById('check_mark_' + sqr.id.slice(-1));
         check.classList.toggle('invisible');
