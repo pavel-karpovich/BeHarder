@@ -18,7 +18,7 @@
   "author": "Pavel Karpovich",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^3.0.0",
     "npx": "^10.2.0",
